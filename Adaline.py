@@ -68,8 +68,8 @@ class Adaline(object):
 
 if __name__ == '__main__':
     X = np.array([[0, 0], [1, 0], [0, 1], [1, 1]])
-    y = np.array([0, 0, 0, 1])
+    y = np.array([0, 1, 1, 1])
 
     p = Adaline()
     p.train(X, y)
-    print(p.predict([0, 1]))
+    print(p.predict([0, 0]))

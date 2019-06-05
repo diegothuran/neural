@@ -23,6 +23,7 @@ class Perceptron(object):
                 error = label - prediction
                 self.weights[1:] += self.learning_rate * error * inputs
                 self.weights[0] += self.learning_rate * error
+            #print(self.weights)
 
 
 if __name__ == '__main__':
@@ -34,4 +35,5 @@ if __name__ == '__main__':
     p.train(X, y)
     print(p.weights)
 
+    print(p.predict([1, 1]))
 
